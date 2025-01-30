@@ -1,0 +1,122 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --darkerBackground: rgb(255, 105, 180);
+    --lighterBackground:rgb(247, 167, 180);
+    --cardBackground: #ffffffab;
+}
+
+body{
+    background: linear-gradient(to right, var(--darkerBackground), var(--lighterBackground));
+    width: 100vw;
+    color: #534f4f;
+}
+
+h2{
+    line-height: 30px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(10%);
+}
+
+[ data-testid="profilePicture"]{
+    display: block;
+    height: 190px;
+    border-radius: 50%;
+}
+
+.card{
+    max-width: 450px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--cardBackground);
+    z-index: 10;
+    box-shadow: 0px 2px 15px #6561618e;
+    border-radius: 50px;
+    margin:  20px;
+}
+
+.imgBlock{
+    display: inline-flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.buttons{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 7px 0;
+}
+
+button{
+    padding: 3px 10px;
+    border: 1px solid hotpink;
+    background-color: pink;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    font-style: italic;
+    transition: all 0.2s ease-in-out ;
+    width: 90px;
+}
+
+button:hover{
+    background-color: hotpink;
+    scale: 1.2;
+}
+
+.textBox{
+    padding: 0 15px 10px 15px ;
+    font-family: 'Fira sans',sans-serif;
+    font-size: 0.9em;
+    line-height: 23px;
+}
+
+[data-testid="currentTimeUTC"]{
+    padding: 5em 0.5em;
+    color: rgba(158, 158, 251, 0.993);
+    font-size: 0.9em;
+}
+
+[data-testid="shortBio"]{
+    display: none;
+    color: rgba(168, 4, 168, 0.758);
+    text-wrap: wrap;
+    padding-top: 2px;
+}
+
+[data-testid="socialLinks"]{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-testid="socialLinks"]>a{
+    padding: 0 10px;
+    font-size: 1.3em;
+}
+
+[data-testid="socialLinks"]>a:link{
+    color: hotpink;
+}
+
+[data-testid="socialLinks"]>a:hover{
+    opacity: 0.5;
+}
+
+[data-testid="socialLinks"]>a:visited{
+    color: rgba(188, 188, 254, 0.993);
+}

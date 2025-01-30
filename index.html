@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+        <div class="container">
+            <div>
+                <div class="card">
+                    <div class="imgBlock">
+                        <div><img src="/images/profilePicture.png" alt="profile picture" data-testid="profilePicture"></div>
+                        <div data-testid="currentTimeUTC"></div>
+                    </div>
+                    <div class="textBox">
+                        <h2 data-testid="fullName">Nzeshi Sarah</h2>
+                        <h3 data-testid="jobTitle">Front-end Developer</h3>
+                        <div class="buttons">
+                            <button class="details">Details</button>
+                            <button class="dark">Dark Mode</button>
+                        </div>
+                        <p data-testid="shortBio">I'm a web developer passionate about building dynamic and responsive websites. I primarily work with React.js and TailwindCss to create seamless user experiences. Currently, I’m focused on mastering React and learning Node.js to further develop my skills as a full-stack developer.</p>
+                        <p data-testid="socialLinks">
+                            <a href="mailto:sarahnzeshi05@gmail.com" target="_blank"><span class="bx bx-envelope" data-testid="emailAddress"></span></a>
+                            <a href="https://www.linkedin.com/in/sarah-nzeshi-bb39a4268" target="_blank"><span class='bx bxl-linkedin-square'></span></a>
+                            <a href="https://github.com/4ssh1" target="_blank"><span class='bx bxl-github'></span></a>
+                            <a href="https://x.com/justsa_rah" target="_blank"><span class='bx bxl-twitter'></span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
