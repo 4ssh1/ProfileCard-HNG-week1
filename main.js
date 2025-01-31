@@ -23,7 +23,7 @@ function showDetails(){
 showDetails()
 
 
-function toggleDarkMode(){
+function toggleDarkModes(){
     const darkModeButton = document.querySelector(".dark")
     const fullName = document.querySelector('[data-testid="fullName"]')
     const title = document.querySelector('[data-testid="jobTitle"]')
@@ -47,4 +47,4 @@ function toggleDarkMode(){
     darkModeButton.addEventListener("click", toggleDarkMode)
 }
 
-toggleDarkMode()
+toggleDarkModes()
